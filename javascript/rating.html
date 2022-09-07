@@ -1,0 +1,108 @@
+<html lang="en">
+    <!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="linking/bootstrap.css">
+</head>
+<style>
+    .star-rating{
+        user-select: none;
+    }
+    .star{
+        font-size: 2em;
+        color: orange;
+        background-color: unset;
+        border: none;
+    }
+    .star.hover{
+        cursor: pointer;
+
+    }
+    .listStyle{
+        list-style-type: none;
+    }
+</style>
+<body>
+    <div class="container mt-5">
+        <div class ="row">
+          <!-- first section -->
+          <div class="col-7 p-3 bg-light">
+            <ul id="ulList">
+              
+  
+            </ul>
+            <!--above comming from js  -->
+          </div>
+  
+          <!-- second section-->
+          <div class="col-5 p-3">
+            <div>
+              <img
+                src="assets/softlogo5.png"
+                height="40px"
+                width="40"
+                class="border border-3 border-light rounded-circle p-1"
+              />
+              <span class="h6 p-2 text-secondary text-uppercase">WRITE YOUR EXPERIANCE</span>
+            </div>
+              <!-- ratings -->
+                <!-- form -->
+              <div id="form" name="todoForm">
+                <p class="mt-4 text-primary font">rating</p>
+                <div class="star-rating">
+                    <button class="star" id="star1">&#9734</button>
+                    <button class="star" id="star2">&#9734</button>
+                    <button class="star" id="star3">&#9734</button>
+                    <button class="star" id="star4">&#9734</button>
+                    <button class="star" id="star5">&#9734</button>
+                </div>
+                             
+                    
+                  <div class=" mt-3">
+                    <input class="p-2 input-style" type="text" id="todoText" name="todo" placeholder="Name">
+                  </div>
+  
+                    <!-- textarea -->
+                  <div class="mt-4">
+                      <textarea class="input-style p-2" name="testimonial" id="testimonial" cols="38" rows="7" placeholder="Write Your Experiance Here" ></textarea> 
+                  </div>
+  
+                  <button type="button" id="btnSubmit" class="btn btn-outline-secondary mt-4"
+                   style="width: 93%;">Send</button>
+  
+              </div>            
+  
+  
+  
+            </div>
+      </div>
+  
+
+    
+    <script src="linking/bootstrap.js"></script>
+    <script src="linking/bootstrap.bundle.min.js"></script>
+    <script src="rating.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="linking/bootstrap.css" />
+    <script src="linking/jquery-3.6.1.js"></script>
+  </head>
+  <style>
+    /* #animate {
+      background: #98bf21;height: 100px;width: 100px;position: absolute;} */
+    #ani {
+      opacity: 0.2;
+      background: #2eb497;
+      height: 100px;
+      width: 100px;
+      position: absolute;
+    }
+    .container {
+      position: relative;
+    }
+    .pos {
+      position: relative;
+    }
+    #ani2 {
+      opacity: 0.3;
+      position: absolute;
+      background: #98bf21;
+      height: 100px;
+      width: 100px;
+      top: 250px;
+    }
+    #btn2 {
+      position: absolute;
+      top: 210px;
+    }
+    #btn0 {
+      position: absolute;
+      top: 210px;
+      left: 220px;
+    }
+  </style>
+  <body>
+    <div class="container bg-light">
+      <!-- <button id="btn0" class="btn mt-2">start animation1</button>
+        <div id="animate"></div>
+         -->
+      <div class="pos">
+        <button id="btn1" class="btn mt-2">start animation2</button>
+        <div id="ani"></div>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aut ipsa,
+        alias facere hic sed animi illo modi, odit aliquid veniam sapiente
+        labore id est tempore accusamus suscipit molestiae rem ullam. Corrupti
+        similique, eveniet voluptatibus consequuntur et beatae repellendus, quis
+        provident deserunt consequatur accusamus ad?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aut ipsa,
+        alias facere hic sed animi illo modi, odit aliquid veniam sapiente
+        labore id est tempore accusamus suscipit molestiae rem ullam. Corrupti
+        similique, eveniet voluptatibus consequuntur et beatae repellendus, quis
+        provident deserunt consequatur accusamus ad?
+      </p>
+      <p class="mt-5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aut ipsa,
+        alias facere hic sed animi illo modi, odit aliquid veniam sapiente
+        labore id est tempore accusamus suscipit molestiae rem ullam. Corrupti
+        similique, eveniet voluptatibus consequuntur et beatae repellendus, quis
+        provident deserunt consequatur accusamus ad?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aut ipsa,
+        alias facere hic sed animi illo modi, odit aliquid veniam sapiente
+        labore id est tempore accusamus suscipit molestiae rem ullam. Corrupti
+        similique, eveniet voluptatibus consequuntur et beatae repellendus, quis
+        provident deserunt consequatur accusamus ad?
+      </p>
+      <button id="btn0" class="btn btn-outline-danger">Stop</button>
+      <button id="btn2" class="btn btn-outline-success">animation queue</button>
+      <div id="ani2"></div>
+
+      <p id="callback">Thisis  paragraph with little content</p>
+      <button id="btn3" class="btn btn-outline-success">hide</button>
+    </div>
+
+    <!-- scripts -->
+    <script src="effects.js"></script>
+    <script src="linking/bootstrap.bundle.min.js"></script>
+    <script src="linking/bootstrap.js"></script>
+  </body>
+</html>

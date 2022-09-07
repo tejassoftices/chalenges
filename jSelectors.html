@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="linking/bootstrap.css" />
+    <script src="linking/jquery-3.6.1.js"></script>
+  </head>
+  <style>
+    .panel {
+      display: block;
+      background: gray;
+      width: 50%;
+    }
+    .flip {
+      background: gray;
+      width: 50%;
+      padding: 2px;
+    }
+    .flip1 {
+      position: relative;
+      left: 25%;
+    }
+    #panel2,
+    #flip2 {
+      width: 50%;
+      padding: 5px;
+      text-align: center;
+      background-color: #e5eecc;
+      border: solid 1px #c3c3c3;
+    }
+    #panel2 {
+      padding: 50px;
+      display: none;
+    }
+    
+  </style>
+  <body>
+    <!-- Selectors -->
+    <p>hello if you click me will disappear</p>
+    <p>click me away</p>
+    <p>click me too</p>
+    <p id="test">pargraph with id test</p>
+    <p id="p1">for the dblclick event</p>
+    <p id="p2">for mouseover event</p>
+    <div id="p3">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis,
+      accusamus numquam molestiae eveniet natus, tempora odit inventore quos rem
+      corporis est possimus maxime ratione id! Tempore vitae nemo blanditiis
+      dolores!
+    </div>
+
+    <!-- jqueryEffects -->
+    <div class="flip1">
+      <div id="flip2">Click to slide down panel</div>
+      <div id="panel2">Hello World</div>
+    </div>
+
+    <button class="ms-5 btn btn-outline-primary">click to fade inboxes</button>
+    <div
+      id="div1"
+      style="width: 80px; height: 80px; display: none; background-color: red"
+    ></div>
+    <br />
+    <div
+      id="div2"
+      style="width: 80px; height: 80px; display: none; background-color: green"
+    ></div>
+    <br />
+    <div
+      id="div3"
+      style="width: 80px; height: 80px; display: none; background-color: blue"
+    ></div>
+
+    <span class="flip ms-2" style="cursor: pointer"
+      >Click to show/hide panel</span
+    >
+
+    <div class="panel mt-0 ms-2">
+      <p>Because time is valuable, we deliver quick and easy learning.</p>
+      <p>
+        At W3Schools, you can study everything you need to learn, in an
+        accessible and handy format.
+      </p>
+    </div>
+    <button class="d-block mt-3">click me</button>
+
+    <p id="para" class="display-3">tejas</p>
+    <button id="hide" class="d-block">hide</button>
+    <button id="show" class="d-block mt-2">show</button>
+
+
+    <footer>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ad sint
+        sed enim sit iste labore impedit nemo culpa incidunt dolorem, quos
+        magnam, nihil expedita ratione consectetur quasi fugit corrupti. Magnam,
+        inventore enim, vel excepturi repellendus sapiente rerum eos voluptatum
+        illo illum voluptates suscipit soluta!
+      </p>
+    </footer>
+
+    <!-- scripts -->
+    <script src="linking/bootstrap.bundle.min.js"></script>
+    <script src="linking/bootstrap.js"></script>
+    <script src="selectors.js"></script>
+  </body>
+
+</html>
