@@ -41,19 +41,23 @@ test
 # acc.reading_charge
 # Accounts.return_date #we can call the public method using class name
 
+=begin
 # givis another name to the methods
-alias print_something puts
+alias print_something puts      # alias keyword
 print_something 1
 
 class Cat
     def speak
         "meow"
     end
+    #alias method
     alias_method "#{name.downcase}_speak", :speak
 
 end
 
 p Cat.new.cat_speak
+=end
+
 
 
 
