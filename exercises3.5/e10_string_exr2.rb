@@ -1,4 +1,5 @@
-def strng_count(str)
+class Count
+    def strng_count(str)
         letters = 0
         numbers = 0
         spaces  = 0
@@ -22,10 +23,12 @@ def strng_count(str)
         puts "spaces are: #{spaces}"
         puts "others are: #{others}"
  end
- 
- puts "Enter the string"
- str = gets.chomp
- strng_count(str)
+
+end
+cnt = Count.new
+puts "Enter the string"
+str = gets.chomp
+cnt.strng_count(str)
 
 
 #  print str.chars

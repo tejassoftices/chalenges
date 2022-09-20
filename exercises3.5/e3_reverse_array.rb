@@ -1,18 +1,21 @@
 # 2} Write a program to reverse the array contents.
-
-def array_reverse(arr)
- i = arr.length
- while i >= 1  do
-    i = i - 1
-    print "#{arr[i]} "
+class Reverse
+    def array_reverse(arr)
+        i = arr.length
+        while i >= 1  do
+           i = i - 1
+           print "#{arr[i]} "
+        end
+           puts "\n"
+    end
+       
 end
-    puts "\n"
-end
+rev = Reverse.new
 #get the array input from user
 puts "Enter elements:"
 i = gets.chomp.split(' ').map(&:to_i)
 puts "reverse array are\n"
-array_reverse(i)
+rev.array_reverse(i)
 
 
 

@@ -1,4 +1,4 @@
-
+=begin
 H = Hash["a" => 100,"b" => 200]
 
 puts "#{H['a']}"
@@ -29,3 +29,16 @@ puts months.to_s
 puts "\n"
 puts months.store("3","march")
 puts months
+puts months.value?("march")  #true
+
+abc = {"a" => "apple","b" => "ball","c" =>"cat"}
+p abc
+
+=end
+
+
+H = {"a" => 100, "b" => 200,[1,"jan"] => 'january'}
+
+p H
+
+

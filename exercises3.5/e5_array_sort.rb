@@ -1,26 +1,27 @@
 #Write a program to sort a numeric array and a string array.
-
-def sorting(array) 
-  i = 0
-  while (i < array.length)
-     j = array.length-1
-     while(j > i)
-         if array[j] < array[j-1]
-           array[j],array[j-1] = array[j-1],array[j]
-         end
-         j = j - 1
-     end
-     i = i + 1 
-  end
-  array
- end
- 
+class Sort
+  def sorting(array) 
+    i = 0
+    while (i < array.length)
+       j = array.length-1
+       while(j > i)
+           if array[j] < array[j-1]
+             array[j],array[j-1] = array[j-1],array[j]
+           end
+           j = j - 1
+       end
+       i = i + 1 
+    end
+    print array,"\n"
+   end
+end
+sor = Sort.new 
  puts "Enter the number array:"
  num = gets.chomp.split(' ').map(&:to_i)
- print sorting(num), "\n"
+ sor.sorting(num)
  puts "enter string array\n"
  str = gets.chomp.split(' ').map(&:to_s)
- print sorting(str)
+ sor.sorting(str)
 
 
 

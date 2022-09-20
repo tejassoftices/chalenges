@@ -1,10 +1,16 @@
 #Write a program which return true(boolean) for odd value & false(boolean) for even values.
-def boolean(value)
-    if value % 2 == 0  
-        puts "true"
-    else
-        puts "false"
+
+class Boolean
+    def boolean(value)
+        if value % 2 == 0  
+            puts "true"
+        else
+            puts "false"
+        end
     end
 end
+bool = Boolean.new
+puts "Enter the value: "
 val = gets.chomp.to_i
-boolean(val)
+bool.boolean(val)
+    

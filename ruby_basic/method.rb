@@ -42,7 +42,8 @@ test
 # Accounts.return_date #we can call the public method using class name
 
 =begin
-# givis another name to the methods
+# gives another name to the methods
+
 alias print_something puts      # alias keyword
 print_something 1
 

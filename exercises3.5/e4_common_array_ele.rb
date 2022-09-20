@@ -1,27 +1,28 @@
 #Write a program to find the common elements between two arrays of integers.
-
-def common_ele(arr1,arr2)
-    puts "common elements are:"
-    i = 0
-    while i < arr1.length
-        j = 0
-        while j < arr2.length
-            if arr1[i] == arr2[j]
-                print "#{arr1[i]} "
+class Common
+    def common_ele(arr1,arr2)
+        puts "common elements are:"
+        i = 0
+        while i < arr1.length
+            j = 0
+            while j < arr2.length
+                if arr1[i] == arr2[j]
+                    print "#{arr1[i]} "
+                end
+                j = j + 1
             end
-            j = j + 1
+            i = i + 1
         end
-        i = i + 1
     end
+    
 end
-
+com = Common.new
 puts "enter first array elements:"
 arr1 = gets.chomp.split(' ').map(&:to_i)
 puts "second array element:"
 arr2 = gets.chomp.split(' ').map(&:to_i)
 
-
-common_ele(arr1,arr2)
+com.common_ele(arr1,arr2)
 
 
 
