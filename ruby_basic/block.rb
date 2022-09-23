@@ -1,65 +1,48 @@
-#the yield statement
-def test 
-    puts "you are in the method"
-    yield
-    puts "you are again in the method"    
-    yield 'again', 6, 6
-end
-test {|i,j,k| puts "you are in the block #{i} #{j} #{k}"}
- 
-
-
-#we can also pass the parameters usng yield statement
+# the yield statement
 def test
-    yield 5
-    puts "you are in the method"
-    yield 100
+  puts 'you are in the method'
+  yield
+  puts 'you are again in the method'
+  yield 'again', 6, 6
 end
-test {|i| puts "you are in the block #{i}"}
+test { |i, j, k| puts "you are in the block #{i} #{j} #{k}" }
 
-
-
-#block and methods
-def test2 
-    yield 9, 10
+# we can also pass the parameters usng yield statement
+def test
+  yield 5
+  puts 'you are in the method'
+  yield 100
 end
-test2 {|i,j| puts "hello world #{i + j}"}       #simplest way to implement block
+test { |i| puts "you are in the block #{i}" }
 
-#we can pass the block to the method which has last argument
-#is proceded by &, in case both * and & are present in the 
-#argument list, & should come letter 
-
-def test3 (&block)
-    block.call 3,4
+# block and methods
+def test2
+  yield 9, 10
 end
-test3 {
-    |i,k|
-    puts "Hello world! #{i + k} and #{k}"
-}
+test2 { |i, j| puts "hello world #{i + j}" } # simplest way to implement block
 
+# we can pass the block to the method which has last argument
+# is proceded by &, in case both * and & are present in the
+# argument list, & should come letter
 
+def test3(&block)
+  block.call 3, 4
+end
+test3 do |i, k|
+  puts "Hello world! #{i + k} and #{k}"
+end
 
+# BEGIN and END block
 
-#BEGIN and END block
+# every ruby file can declare blocks of code to be run as the file is being
+# loaded (the BEGIN blocks) and after the program has finished executing (the END blocks).
 
-#every ruby file can declare blocks of code to be run as the file is being
-#loaded (the BEGIN blocks) and after the program has finished executing (the END blocks).
-
-END{
-    puts "END code block"
-}
+at_exit do
+  puts 'END code block'
+end
 
 BEGIN {
-    puts "BEGIN code block"
+    puts 'BEGIN code block'
 }
 
-p "MAIN code block"
-
-
-
-
-
-
-
-
-
+p 'MAIN code block'

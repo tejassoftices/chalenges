@@ -1,52 +1,50 @@
-#while loop
+# while loop
 $i = 0
 $num = 5
-while $i <= $num do
-    puts "inside the loop #$i"
-    $i+=1
+while $i <= $num
+  puts "inside the loop #{$i}"
+  $i += 1
 end
 
-#while modifire
+# while modifire
 $i = 0
 $num = 5
-begin 
-    puts "inside the loop i = #$i"
-    $i += 1
+begin
+  puts "inside the loop i = #{$i}"
+  $i += 1
 end while $i < $num
 
-#until statement : execute code while condition is false
-$i =0
+# until statement : execute code while condition is false
+$i = 0
 $num = 5
 
-until $i > $num do
-    puts "iside the loop i := #$i"
-    $i += 1
-end 
+until $i > $num
+  puts "iside the loop i := #{$i}"
+  $i += 1
+end
 
 # until modifire
-$i=0
-$num =5
+$i = 0
+$num = 5
 begin
-    puts "inside the loop i= #$i"
-    $i += 1
+  puts "inside the loop i= #{$i}"
+  $i += 1
 end until $i >= $num
 
-#foor  statement in ruby 
+# foor  statement in ruby
 for i in 0..5
-    puts "value of local variable is #{i}"
+  puts "value of local variable is #{i}"
 end
-#break statement
+# break statement
 for i in 0..5
-    if i > 2  then 
-        break
-    end
-    puts "value of local variable is #{i}"
+  break if i > 2
+
+  puts "value of local variable is #{i}"
 end
 
-#ruby next statement
+# ruby next statement
 for i in 0..5
-    if i < 2  then 
-        next
-    end
-    puts "value of local variable is =  #{i}"
+  next if i < 2
+
+  puts "value of local variable is =  #{i}"
 end
