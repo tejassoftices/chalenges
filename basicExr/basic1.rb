@@ -73,9 +73,43 @@
 #7} Write a Ruby program to check three numbers and return true if one or more of them
 # are small. A number is called "small" if it is in the range 1..10 inclusive.
 
-def in110(a, b, c)
-  ((a >= 1 && a <= 10) || (b >= 1 && b <= 10) || (c >= 1 && c <= 10))
-end
-print in110(1, 2, 3), "\n"
-print in110(10, 15, 33), "\n"
-print in110(11, 25, 43), "\n"
+# def in110(a, b, c)
+#   ((a >= 1 && a <= 10) || (b >= 1 && b <= 10) || (c >= 1 && c <= 10))
+# end
+# print in110(1, 2, 3), "\n"
+# print in110(10, 15, 33), "\n"
+# print in110(11, 25, 43), "\n"
+
+#8} get ruby version and patch level
+
+# puts "Ruby version:" + RUBY_VERSION
+# puts "Ruby patch level:" + RUBY_PATCHLEVEL.to_s 
+
+#9} printing a mulltiline string
+
+# puts <<~HEREDOC
+#     Sample string :
+#     a string that you "don't" have to escape
+#     This
+#     is a ....... multi-line
+#     heredoc string --------> example
+# HEREDOC
+
+# puts %{
+# Sample string :
+# a string that you "don't" have to escape
+# This
+# is a ....... multi-line
+# heredoc string --------> example
+# }
+
+#10}Write a Ruby program to create a new string where "if" is added to the front of a given 
+# string. If the string already begins with "if", return the string unchanged.
+
+# def add_if(str)
+#   str[0,4] == " if " ? str : "if " + str
+# end
+# puts add_if("if else")
+# puts add_if("else")
+# puts add_if("elseed")
+
